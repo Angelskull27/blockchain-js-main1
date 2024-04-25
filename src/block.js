@@ -37,8 +37,8 @@ class Block {
       let decodedData = hex2ascii(encodedData); // Convierte los datos codificados a ASCII
       let dataObject = JSON.parse(decodedData); // Parsea los datos de JSON a objeto JavaScript
 
-      if (dataObject === "Genesis Block") {
-        reject(new Error("This is the Genesis Block")); // Rechaza la promesa si es el bloque génesis
+      if (dataObject === "Bloque 0") {
+        reject(new Error("This is the Bloque 0")); // Rechaza la promesa si es el bloque génesis
       }
 
       resolve(dataObject); // Resuelve la promesa con los datos del bloque si no es el bloque génesis
