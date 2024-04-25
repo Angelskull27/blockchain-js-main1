@@ -10,7 +10,7 @@ class Blockchain {
 
   async initializeChain() {
     if (this.height === -1) {
-      const block = new Block({ data: "Genesis Block" });
+      const block = new Block({ data: "Bloque 0" });
       await this.addBlock(block);
     }
   }
