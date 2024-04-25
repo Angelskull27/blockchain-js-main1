@@ -38,10 +38,10 @@ class Block {
       let dataObject = JSON.parse(decodedData); // Parsea los datos de JSON a objeto JavaScript
 
       if (dataObject === "Bloque 0") {
-        reject(new Error("This is the Bloque 0")); // Rechaza la promesa si es el bloque génesis
+        reject(new Error("This is the Bloque 0")); // Rechaza la promesa si es el bloque 0
       }
 
-      resolve(dataObject); // Resuelve la promesa con los datos del bloque si no es el bloque génesis
+      resolve(dataObject); // Resuelve la promesa con los datos del bloque si no es el bloque 0
     });
   }
 

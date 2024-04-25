@@ -10,9 +10,9 @@ class Blockchain {
   }
 
   async initializeChain() {
-    // Método para inicializar la cadena con un bloque génesis si está vacía
+    // Método para inicializar la cadena con un bloque 0 si está vacía
     if (this.height === -1) {
-      const block = new Block({ data: "Bloque 0" }); // Crea un bloque génesis
+      const block = new Block({ data: "Bloque 0" }); // Crea un bloque 0
       await this.addBlock(block); // Añade el bloque a la cadena
     }
   }
